@@ -13,11 +13,10 @@
 命令手册
 ========
 
-.. toctree::
-   :maxdepth: 3
-
-
 .. comments
     comment something out below
 
-    tar <tar>
+    .. toctree::
+        :maxdepth: 3
+
+        tar <tar>

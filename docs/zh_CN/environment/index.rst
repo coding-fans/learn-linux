@@ -14,6 +14,6 @@
 ========
 
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
     VirtualBox <virtualbox/index>

@@ -1,3 +1,3 @@
 [submodule "resources/dmi-python"]
 	path = resources/dmi-python
-	url = git@github.com:auto-DevOps/dmi-python.git
+	url = https://github.com/auto-DevOps/dmi-python.git

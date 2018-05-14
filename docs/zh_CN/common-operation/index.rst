@@ -14,7 +14,7 @@
 ========
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
     文件目录树 <file-tree>
     文件打包 <file-baling>

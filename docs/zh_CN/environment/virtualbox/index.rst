@@ -34,7 +34,7 @@ VirtualBox
     :width: 512px
 
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 3
 
     快速开始 <quick-start>
 
