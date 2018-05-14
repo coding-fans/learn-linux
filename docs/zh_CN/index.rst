@@ -18,13 +18,13 @@
 =========
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
     关于 <about/index>
     环境准备 <environment/index>
+    常用操作 <common-operation/index>
     系统管理 <administration/index>
-
-
+    命令手册 <command-manual/index>
 
 .. comments
     comment something out below

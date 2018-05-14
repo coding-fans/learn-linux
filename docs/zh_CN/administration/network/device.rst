@@ -87,5 +87,14 @@
         inet 10.0.2.15/24 brd 10.0.2.255 scope global eth0
            valid_lft forever preferred_lft forever
 
+下一步
+======
+
+.. include:: /_fragments/next-step-to-wechat-mp.rst
+
+.. include:: /_fragments/wechat-reward.rst
+
+.. include:: /_fragments/disqus.rst
+
 .. comments
     comment something out below

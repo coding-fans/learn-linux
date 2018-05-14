@@ -37,3 +37,8 @@ VirtualBox
    :maxdepth: 3
 
     快速开始 <quick-start>
+
+.. comments
+    comment something out below
+
+    共享目录 <shared-folder>
