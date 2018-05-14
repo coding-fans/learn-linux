@@ -11,7 +11,12 @@
 
 .. meta::
     :description lang=zh:
-    :keywords:
+        文件打包有多种不同的方式(格式)，下面我们一一介绍：
+        tar是Unix系统上的打包工具，可以将多个文件合并成一个文件，扩展名为.tar。
+        该命令最初的设计目的是将文件备份到磁带上(tape archive)，故而得名tar。
+        tar -cf dmi-python.tar dmi-python
+        其中，-c参数表示创建文件包(文件归档)；-f指定目标文件名；dmi-python是待打包目录。
+    :keywords: tar, tar文件打包, file-baling
 
 ========
 文件打包
