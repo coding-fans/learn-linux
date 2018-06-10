@@ -56,6 +56,8 @@
 
 这时，必须打开 系统偏好设置 >> 安全性与隐私 >> 通用 面板，允许 ``Oracle America, Inc`` ，并重新安装。
 
+.. _environment/virtualbox/quick-start/create-vm:
+
 创建虚拟机
 ==========
 
@@ -101,6 +103,8 @@
 
 到这你可能忍不住想点启动按钮，开启虚拟机了。
 但是，现在的虚拟机硬盘还是空的，需要先安装操作系统才能启动。
+
+.. _environment/virtualbox/quick-start/insert-iso:
 
 挂载光盘
 --------
