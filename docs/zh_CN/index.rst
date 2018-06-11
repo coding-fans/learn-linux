@@ -18,7 +18,7 @@
 =========
 
 .. toctree::
-    :maxdepth: 2
+    :titlesonly:
 
     关于 <about/index>
     环境准备 <environment/index>

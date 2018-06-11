@@ -17,6 +17,6 @@
     comment something out below
 
     .. toctree::
-        :maxdepth: 3
+        :titlesonly:
 
         tar <tar>

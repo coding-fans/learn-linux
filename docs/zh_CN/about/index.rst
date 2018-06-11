@@ -14,7 +14,7 @@
 ====
 
 .. toctree::
-   :maxdepth: 2
+    :titlesonly:
 
     交流 <contact>
 

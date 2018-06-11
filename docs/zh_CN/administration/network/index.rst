@@ -14,7 +14,7 @@
 ========
 
 .. toctree::
-   :maxdepth: 3
+    :titlesonly:
 
     设备管理 <device>
 

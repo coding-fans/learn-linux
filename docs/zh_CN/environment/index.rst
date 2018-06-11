@@ -34,7 +34,7 @@
 `Linode <https://www.linode.com/?r=8e45c4effcbbafe17fd593b5064d219bfab37e7d>`_ 。
 
 .. toctree::
-    :maxdepth: 2
+    :titlesonly:
 
     VirtualBox <virtualbox/index>
     安装系统 <install>

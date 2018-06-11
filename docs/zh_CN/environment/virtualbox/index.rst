@@ -34,7 +34,7 @@ VirtualBox
     :width: 512px
 
 .. toctree::
-    :maxdepth: 3
+    :titlesonly:
 
     快速开始 <quick-start>
     共享文件夹 <shared-folder>

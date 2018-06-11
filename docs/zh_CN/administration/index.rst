@@ -14,7 +14,7 @@
 ========
 
 .. toctree::
-    :maxdepth: 3
+    :titlesonly:
 
     用户管理 <user>
     网络管理 <network/index>
