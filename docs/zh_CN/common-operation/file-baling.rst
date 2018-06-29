@@ -137,12 +137,12 @@ tar
 .. csv-table:: 表格-1 文件包扩展名
     :header: "长扩展名", "短扩展名"
 
-	".tar.bz2", ".tb2, .tbz, .tbz2"
-	".tar.gz", ".tgz"
-	".tar.lz"
-	".tar.lzma", ".tlz"
-	".tar.xz", ".txz"
-	".tar.Z", ".tZ"
+    ".tar.bz2", ".tb2, .tbz, .tbz2"
+    ".tar.gz", ".tgz"
+    ".tar.lz"
+    ".tar.lzma", ".tlz"
+    ".tar.xz", ".txz"
+    ".tar.Z", ".tZ"
 
 解包
 ----
@@ -166,6 +166,57 @@ tar
     $ gunzip dmi-python.tar.gz
     $ tar -xf dmi-python.tar
 
+rar
+===
+
+`RAR` 是另一种文件归档压缩格式， 在 `Windows` 平台上较为多见。
+`Linux` 管理员也需要学习 `RAR` 基本操作，以备不时之需。
+
+安装
+----
+
+`Linux` 系统一般没有 `rar` 命名，需要通过包管理工具进行安装，安装方法因发行版而异。
+
+`Debian` / `Ubuntu` :
+
+.. code-block:: shell-session
+
+    $ apt install rar
+
+打包
+----
+
+执行 ``a`` 命令将文件或目录添加到压缩包：
+
+.. code-block:: shell-session
+
+    $ rar a dmi-python.rar dmi-python
+
+列举
+----
+
+与 `tar` 命令类似， `rar` 命令也可以列举压缩包包含的目录和文件( ``l`` 命令 )：
+
+.. code-block:: shell-session
+
+    $ rar l dmi-python.rar
+
+解包
+----
+
+解包一般采用 ``x`` 命令，该命令将压缩包内的目录及文件原封不动地解到当前目录：
+
+.. code-block:: shell-session
+
+    $ rar x dmi-python.rar
+
+还可以用 ``e`` 命令解包，这种方式不保留目录结构，只将文件解到当前目录。
+如果不同目录下存在同名文件则产生冲突，需要通过覆盖或者忽略解决：
+
+.. code-block:: shell-session
+
+    $ rar e dmi-python.rar
+
 下一步
 ======
 
@@ -175,6 +226,7 @@ tar
 ========
 
 #. `tar (computing) - Wikipedia <https://en.wikipedia.org/wiki/Tar_(computing)>`_
+#. `RAR - ArchWiki <https://wiki.archlinux.org/index.php/RAR>`_
 
 .. include:: /_fragments/wechat-reward.rst
 
@@ -183,3 +235,45 @@ tar
 .. comments
     comment something out below
 
+    $ rar l dmi-python.rar
+
+    RAR 5.50   Copyright (c) 1993-2017 Alexander Roshal   11 Aug 2017
+    Trial version             Type 'rar -?' for help
+
+    Archive: dmi-python.rar
+    Details: RAR 5
+
+     Attributes      Size     Date    Time   Name
+    ----------- ---------  ---------- -----  ----
+     -rwxr-xr-x       242  2018-05-13 09:11  dmi-python/bin/print-dmi-jsonic.py
+     -rw-r--r--       485  2018-05-13 09:11  dmi-python/bin/dmi/__init__.py
+     -rw-r--r--       241  2018-05-13 09:11  dmi-python/bin/dmi/fetcher/fake.py
+     -rw-r--r--       429  2018-05-13 09:11  dmi-python/bin/dmi/fetcher/__init__.py
+     -rw-r--r--      1175  2018-05-13 09:11  dmi-python/bin/dmi/fetcher/windows.py
+     -rw-r--r--      2095  2018-05-13 09:11  dmi-python/bin/dmi/fetcher/linux.py
+     ...
+     drwxr-xr-x         0  2018-05-13 09:11  dmi-python/dmi
+     drwxr-xr-x         0  2018-05-13 09:11  dmi-python
+    ----------- ---------  ---------- -----  ----
+                    48507                    60
+
+
+    $ rar a dmi-python.rar dmi-python
+
+    RAR 5.50   Copyright (c) 1993-2017 Alexander Roshal   11 Aug 2017
+    Trial version             Type 'rar -?' for help
+
+    Evaluation copy. Please register.
+
+    Creating archive dmi-python.rar
+
+    Adding    dmi-python/bin/print-dmi-jsonic.py                          OK
+    Adding    dmi-python/bin/dmi/__init__.py                              OK
+    Adding    dmi-python/bin/dmi/fetcher/fake.py                          OK
+    Adding    dmi-python/bin/dmi/fetcher/__init__.py                      OK
+    Adding    dmi-python/bin/dmi/fetcher/windows.py                       OK
+    ...
+    Adding    dmi-python/bin                                              OK
+    Adding    dmi-python/dmi                                              OK
+    Adding    dmi-python                                                  OK
+    Done

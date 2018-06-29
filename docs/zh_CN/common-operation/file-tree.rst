@@ -10,12 +10,12 @@
     Changelog:
 
 .. meta::
-	:description lang=zh:
+    :description lang=zh:
         在Linux终端中，有办法显示文件目录树吗？
         答案是肯定的——tree命令就可以完美地做到这一点：
         如果系统未安装tree命令，需要先通过包管理工具进行安装。
         sudo apt install tree
-	:keywords: tree, file tree, 文件树, tree命令, 目录树, 文件目录树
+    :keywords: tree, file tree, 文件树, tree命令, 目录树, 文件目录树
 
 ==========
 文件目录树
@@ -48,38 +48,38 @@ tree
 
     $ cd resources/dmi-python
     $ tree
-	.
-	├── README.md
-	├── bin
-	│   ├── dmi -> ../dmi
-	│   └── print-dmi-jsonic.py
-	└── dmi
-		├── __init__.py
-		├── fetcher
-		│   ├── __init__.py
-		│   ├── fake.py
-		│   ├── linux.py
-		│   └── windows.py
-		└── parser
-			├── __init__.py
-			├── parser.py
-			├── type.py
-			└── type_parsers
-				├── __init__.py
-				├── all.py
-				├── base.py
-				├── t0_bios.py
-				├── t11_oem_strings.py
-				├── t126_inactive.py
-				├── t127_end_of_table.py
-				├── t16_physical_memory_array.py
-				├── t17_memory_device.py
-				├── t19_memory_array_mapped_address.py
-				├── t1_system.py
-				├── t2_baseboard.py
-				├── t32_system_boot.py
-				├── t3_chassis.py
-				└── t4_processor.py
+    .
+    ├── README.md
+    ├── bin
+    │   ├── dmi -> ../dmi
+    │   └── print-dmi-jsonic.py
+    └── dmi
+        ├── __init__.py
+        ├── fetcher
+        │   ├── __init__.py
+        │   ├── fake.py
+        │   ├── linux.py
+        │   └── windows.py
+        └── parser
+            ├── __init__.py
+            ├── parser.py
+            ├── type.py
+            └── type_parsers
+                ├── __init__.py
+                ├── all.py
+                ├── base.py
+                ├── t0_bios.py
+                ├── t11_oem_strings.py
+                ├── t126_inactive.py
+                ├── t127_end_of_table.py
+                ├── t16_physical_memory_array.py
+                ├── t17_memory_device.py
+                ├── t19_memory_array_mapped_address.py
+                ├── t1_system.py
+                ├── t2_baseboard.py
+                ├── t32_system_boot.py
+                ├── t3_chassis.py
+                └── t4_processor.py
 
 这样，整个项目的代码结构就清晰呈现在眼前了！
 

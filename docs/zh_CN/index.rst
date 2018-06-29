@@ -24,6 +24,8 @@
     环境准备 <environment/index>
     常用操作 <common-operation/index>
     系统管理 <administration/index>
+    开发环境 <development-environment/index>
+    系统编程 <system-programming/index>
     命令手册 <command-manual/index>
 
 .. comments
