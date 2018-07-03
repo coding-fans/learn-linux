@@ -40,9 +40,15 @@
 启停
 ----
 
+启用网卡，请运行以下命名：
+
 .. code-block:: shell-session
 
     $ ip link set eth1 up
+
+命令成功执行后，网卡即处于活跃(工作)状态。
+
+相应地，停用网卡则是：
 
 .. code-block:: shell-session
 
