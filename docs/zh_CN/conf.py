@@ -86,7 +86,7 @@ html_theme = 'alabaster'
 html_theme_options = {
     'logo': 'logo.jpg',
     #'logo_name': True,
-    'description': u'Linux入门教程',
+    'description': u'跟着小菜一起学习Linux！',
 
     'font_family': ','.join(map(repr, [
         'Arial',

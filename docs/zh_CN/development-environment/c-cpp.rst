@@ -10,7 +10,7 @@
     Changelog:
 
 .. meta::
-    :keywords: linux, c, c++, gcc, g++, 安装
+    :keywords: linux, c, c++, 编译, gcc, g++, 安装, make, Makefile, 静态库, 动态库
 
 ====================
 C/C++ 开发环境(终端)
@@ -29,7 +29,7 @@ C 语言
 
     $ sudo apt install gcc
 
-接下来，我们编译一个非常简单的 `C` 语言程序 `hello_world.c <http://github.com/fasionchan/learn-linux/tree/master/src/development-environment/c-cpp/c/hello_world.c>`_ 。
+接下来，我们编译一个非常简单的 `C` 语言程序 `hello_world.c <http://github.com/fasionchan/learn-linux/tree/master/src/development-environment/c-cpp/c/hello_world.c>`__ 。
 代码如下：
 
 .. literalinclude:: /_src/development-environment/c-cpp/c/hello_world.c
@@ -104,23 +104,23 @@ C++ 语言
 
 大型程序一般由多个文件组成，编译多文件程序，将所有源码文件传给编译器即可。
 
-以 `C` 语言为例，将 `hello_world.c <http://github.com/fasionchan/learn-linux/tree/master/src/development-environment/c-cpp/c/hello_world.c>`_
+以 `C` 语言为例，将 `hello_world.c <http://github.com/fasionchan/learn-linux/tree/master/src/development-environment/c-cpp/c/hello_world.c>`__
 拆解成两个文件进行演示。
-首先是 `say.c <http://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/multi-file/say.c>`_ ：
+首先是 `say.c <http://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/multi-file/say.c>`__ ：
 
 .. literalinclude:: /_src/development-environment/c-cpp/multi-file/say.c
-    :caption: say.c
+    :caption: multi-file/say.c
     :name: development-environment/c-cpp/multi-file/say.c
     :language: c
     :lines: 13-
     :linenos:
 
-``say.c`` 定义了一个函数，名为 ``say_hello`` 用于输出 ``Hello, world!`` 。
+`say.c <http://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/multi-file/say.c>`__ 定义了一个函数，名为 ``say_hello`` 用于输出 ``Hello, world!`` 。
 
-在 `hello_world.c <http://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/multi-file/hello_world.c>`_ 中，直接调用 ``say_hello`` 即可：
+在 `hello_world.c <http://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/multi-file/hello_world.c>`__ 中，直接调用 ``say_hello`` 即可：
 
 .. literalinclude:: /_src/development-environment/c-cpp/multi-file/hello_world.c
-    :caption: hello_world.c
+    :caption: multi-file/hello_world.c
     :name: development-environment/c-cpp/multi-file/hello_world.c
     :language: c
     :lines: 13-
@@ -160,7 +160,7 @@ C++ 语言
     $ ls
     hello_world.c  say.c  say.h
 
-先 **编译** `say.c` 文件，生成 `say.o` 对象文件：
+先 **编译** `say.c <http://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/multi-file2/say.c>`__ 文件，生成 `say.o` 对象文件：
 
 .. code-block:: shell-session
 
@@ -168,7 +168,7 @@ C++ 语言
     $ ls
     hello_world.c  say.c  say.h  say.o
 
-再 **编译** `hello_world.c` 文件，生成 `hello_world.o` 对象文件：
+再 **编译** `hello_world.c <http://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/multi-file2/hello_world.c>`__ 文件，生成 `hello_world.o` 对象文件：
 
 .. code-block:: shell-session
 
@@ -188,7 +188,7 @@ C++ 语言
 
     为啥要分阶段编译？
 
-    分阶段编译最大的好处是，可以进行部分编译——只编译有变更的部分。
+    分阶段编译最大的好处是，可以进行部分编译—— **只编译有变更部分** 。
 
     假设例子中， `hello_world.c` 有变更，而 `say.c` 没有变更。
     那么，我们只需要编译 `hello_world.c` 生成新的 `hello_world.o` 对象文件，
@@ -203,13 +203,13 @@ C++ 语言
 我们尝到部分编译的好处，但是区分哪些源码文件有变更是个麻烦事儿。
 而且，手工敲这么多编译命令也很无聊，我们急需一种能够自动构建的方法。
 
-这时，我们可以借助自动化构建工具 `make` ：
+这时，我们可以借助自动化构建工具 `make <https://en.wikipedia.org/wiki/Make_(software)>`_ ：
 
 .. code-block:: shell-session
 
     $ sudo apt install make
 
-构建规则定义在 `Makefile` 里：
+构建规则定义在 `Makefile <https://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/auto-build/Makefile>`_ 里：
 
 .. literalinclude:: /_src/development-environment/c-cpp/auto-build/Makefile
     :caption: Makefile
@@ -222,7 +222,7 @@ C++ 语言
 
 `Makefile` 大致可以理解成 **目标** 、 **依赖** 以及 **构建指令** 。
 
-以第 `3-4` 行为例， `say.o` 是构建 **目标** ， `say.c` 是 **依赖** ，之前以制表符( `\t` )缩进的行是 **构建指令** 。
+以第 `3-4` 行为例， `say.o` 是构建 **目标** ， `say.c` 是 **依赖** ，其后以制表符( `\\t` )缩进的行是 **构建指令** 。
 换句话将，要构建 `say.o` 需要依赖 `say.c` 源码文件，构建方法是执行 `gcc` 编译命令。
 
 依赖定义清楚之后， `make` 可以决定什么情况下需要重新构建，什么情况下则不用。
@@ -250,7 +250,15 @@ C++ 语言
 
 `make` 命令将确保俩子目标( `say.o` 以及 `hello_world.o` )先被正确构建。
 
-最后，一起感受一下自动构建有多爽：
+最后，一起感受一下自动构建有多爽。进入 `auto-build <https://github.com/fasionchan/learn-linux/tree/master/src/development-environment/c-cpp/auto-build>`_ 目录：
+
+.. code-block:: shell-session
+
+    $ cd auto-build
+    $  ls
+    hello_world.c  Makefile  say.c  say.h
+
+执行 `make` 命令：
 
 .. code-block:: shell-session
 
@@ -310,9 +318,9 @@ C++ 语言
 
 静态库的全称是静态链接程序库，在程序编译阶段被链接进可执行程序。
 
-接下来，我们将 `say.c` 编译成一个静态库，以此演示制作并使用静态库的方法。
+接下来，我们将 `say.c <https://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/static-library/say.c>`__ 编译成一个静态库，以此演示制作并使用静态库的方法。
 
-进入 `static-library` 目录：
+进入 `static-library <https://github.com/fasionchan/learn-linux/tree/master/src/development-environment/c-cpp/static-library>`_ 目录：
 
 .. code-block:: shell-session
 
@@ -320,7 +328,7 @@ C++ 语言
     $ ls
     hello_world.c  say.c  say.h
 
-编译 `say.c` ：
+编译 `say.c <https://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/static-library/say.c>`__ ：
 
 .. code-block:: shell-session
 
@@ -337,7 +345,7 @@ C++ 语言
     $ ls
     hello_world.c  libsay.a  say.c  say.h  say.o
 
-编译 `hello_world.c` 时指定链接静态库：
+编译 `hello_world.c <https://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/static-library/hello_world.c>`__ 时指定链接静态库：
 
 .. code-block:: shell-session
 
@@ -354,9 +362,9 @@ C++ 语言
 相反，程序只记录需要的动态库，直到运行时才搜索并加载。
 因此，采用动态库的程序，编译后生成的可执行文件更为短小。
 
-接下来，我们将 `say.c` 编译成一个动态库，以此演示制作并使用动态库的方法。
+接下来，我们将 `say.c <https://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/dynamic-library/say.c>`__ 编译成一个动态库，以此演示制作并使用动态库的方法。
 
-进入 `dynamic-library` 目录：
+进入 `dynamic-library <https://github.com/fasionchan/learn-linux/tree/master/src/development-environment/c-cpp/dynamic-library>`_ 目录：
 
 .. code-block:: shell-session
 
@@ -364,7 +372,7 @@ C++ 语言
     $ ls
     hello_world.c  say.c  say.h
 
-编译 `say.c` ：
+编译 `say.c <https://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/dynamic-library/say.c>`__ ：
 
 .. code-block:: shell-session
 
@@ -383,7 +391,7 @@ C++ 语言
     $ ls
     hello_world.c  libsay.so  say.c  say.h  say.o
 
-在编译 `hello_world.c` 时，链接到生成的动态库：
+在编译 `hello_world.c <https://github.com/fasionchan/learn-linux/blob/master/src/development-environment/c-cpp/dynamic-library/hello_world.c>`__ 时，链接到生成的动态库：
 
 .. code-block:: shell-session
 
