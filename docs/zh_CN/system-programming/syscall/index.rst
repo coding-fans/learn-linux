@@ -1,7 +1,7 @@
-.. 系统编程
+.. 系统调用
     FileName:   index.rst
     Author:     Fasion Chan
-    Created:    2018-06-29 08:34:00
+    Created:    2018-07-10 09:56:03
     @contact:   fasionchan@gmail.com
     @version:   $Id$
 
@@ -10,14 +10,13 @@
     Changelog:
 
 ========
-系统编程
+系统调用
 ========
 
 .. toctree::
     :titlesonly:
 
-    系统调用 <syscall/index>
-    文件IO <file-io/index>
+    系统调用原理 <principle>
 
 .. comments
     comment something out below

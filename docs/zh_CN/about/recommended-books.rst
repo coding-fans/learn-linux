@@ -26,6 +26,13 @@ Shell编程
 系统编程
 ========
 
+.. figure:: /_images/about/recommended-books/d7c4519d64ebc3b2792bbcd9f0b0b045.jpg
+    :width: 160px
+    :target: https://book.douban.com/subject/2622187/
+
+    *Understanding Unix/Linux Programming*
+    👉 `豆瓣 <https://book.douban.com/subject/2622187/>`__ /
+
 .. figure:: /_images/about/recommended-books/4fd7b291f57dc205199f93786839ff2e.jpg
     :width: 160px
     :target: https://book.douban.com/subject/1788421/
