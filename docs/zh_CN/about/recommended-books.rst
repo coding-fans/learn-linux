@@ -47,6 +47,33 @@ Shell编程
     *Linux/Unix系统编程手册*
     👉 `豆瓣 <https://book.douban.com/subject/25809330/>`__ /
 
+内核
+====
+
+.. figure:: /_images/about/recommended-books/36c859a197e16960bba2c6f449a2b1c0.jpg
+    :width: 160px
+    :target: https://book.douban.com/subject/6097773/
+
+    *Linux内核设计与实现*
+    👉 `豆瓣 <https://book.douban.com/subject/6097773/>`__ /
+
+其他
+====
+
+.. figure:: /_images/about/recommended-books/e4720626fac9e948a495c59f1257c67e.jpg
+    :width: 160px
+    :target: https://book.douban.com/subject/7564417/
+
+    *Linux/Unix设计思想*
+    👉 `豆瓣 <https://book.douban.com/subject/7564417/>`__ /
+
+.. figure:: /_images/about/recommended-books/46d791bb60edd4b6d38ee06a09bc938e.jpg
+    :width: 160px
+    :target: https://book.douban.com/subject/25930025/
+
+    *只是为了好玩——Linux之父林纳斯自传*
+    👉 `豆瓣 <https://book.douban.com/subject/25930025/>`__ /
+
 下一步
 ======
 

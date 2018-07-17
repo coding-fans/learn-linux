@@ -17,6 +17,7 @@
     :titlesonly:
 
     文件读取 <read>
+    文件写入 <write>
     文件描述符 <file-descriptor>
 
 .. comments
