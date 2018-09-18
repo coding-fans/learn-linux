@@ -1,7 +1,7 @@
-.. 系统编程
+.. 高级文件IO
     FileName:   index.rst
     Author:     Fasion Chan
-    Created:    2018-06-29 08:34:00
+    Created:    2018-07-18 20:20:22
     @contact:   fasionchan@gmail.com
     @version:   $Id$
 
@@ -9,16 +9,15 @@
 
     Changelog:
 
-========
-系统编程
-========
+==========
+高级文件IO
+==========
 
 .. toctree::
     :titlesonly:
 
-    系统调用 <syscall/index>
-    文件IO <file-io/index>
-    高级文件IO <advanced-file-io/index>
+    内存映射 <mmap>
+    存储介质同步 <fsync>
 
 .. comments
     comment something out below

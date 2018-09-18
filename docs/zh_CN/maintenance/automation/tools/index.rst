@@ -1,7 +1,7 @@
-.. 系统编程
+.. 自动化工具
     FileName:   index.rst
     Author:     Fasion Chan
-    Created:    2018-06-29 08:34:00
+    Created:    2018-09-17 20:41:04
     @contact:   fasionchan@gmail.com
     @version:   $Id$
 
@@ -9,16 +9,14 @@
 
     Changelog:
 
-========
-系统编程
-========
+==========
+自动化工具
+==========
 
 .. toctree::
     :titlesonly:
 
-    系统调用 <syscall/index>
-    文件IO <file-io/index>
-    高级文件IO <advanced-file-io/index>
+    Ansible <ansible/index>
 
 .. comments
     comment something out below

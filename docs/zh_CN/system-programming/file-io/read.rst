@@ -9,6 +9,9 @@
 
     Changelog:
 
+.. meta::
+    :keywords: 文件读取, Linux, C语言, read, 系统调用, system call, read file
+
 ========
 文件读取
 ========
@@ -91,8 +94,4 @@
 
 .. comments
     comment something out below
-
-    .. meta::
-        :description lang=zh:
-        :keywords:
 

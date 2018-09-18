@@ -50,12 +50,26 @@ Shell编程
 内核
 ====
 
+.. figure:: /_images/about/recommended-books/275ef30d976dded5aa2c083940a83f4f.jpg
+    :width: 160px
+    :target: https://book.douban.com/subject/2287506/
+
+    *深入理解Linux内核*
+    👉 `豆瓣 <https://book.douban.com/subject/2287506/>`__ /
+
 .. figure:: /_images/about/recommended-books/36c859a197e16960bba2c6f449a2b1c0.jpg
     :width: 160px
     :target: https://book.douban.com/subject/6097773/
 
     *Linux内核设计与实现*
     👉 `豆瓣 <https://book.douban.com/subject/6097773/>`__ /
+
+.. figure:: /_images/about/recommended-books/c6badccd59361d0babf667def133efc7.jpg
+    :width: 160px
+    :target: https://book.douban.com/subject/24708145/
+
+    *Linux内核设计的艺术*
+    👉 `豆瓣 <https://book.douban.com/subject/24708145/>`__ /
 
 其他
 ====
