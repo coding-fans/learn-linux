@@ -16,6 +16,7 @@
 .. toctree::
     :titlesonly:
 
+    机器名管理 <hostname>
     设备管理 <device>
 
 .. comments
