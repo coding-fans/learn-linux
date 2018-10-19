@@ -1,7 +1,7 @@
-.. 系统编程
+.. 系统及内核
     FileName:   index.rst
     Author:     Fasion Chan
-    Created:    2018-06-29 08:34:00
+    Created:    2018-10-18 20:56:03
     @contact:   fasionchan@gmail.com
     @version:   $Id$
 
@@ -9,17 +9,14 @@
 
     Changelog:
 
-========
-系统编程
-========
+==========
+系统与内核
+==========
 
 .. toctree::
     :titlesonly:
 
-    系统调用 <syscall/index>
-    系统与内核 <system-kernel/index>
-    文件IO <file-io/index>
-    高级文件IO <advanced-file-io/index>
+    获取系统内核信息 <uname>
 
 .. comments
     comment something out below
