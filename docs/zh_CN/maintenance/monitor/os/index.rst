@@ -1,7 +1,7 @@
-.. 监控
+.. 操作系统监控
     FileName:   index.rst
     Author:     Fasion Chan
-    Created:    2018-07-25 20:38:11
+    Created:    2018-10-18 20:38:11
     @contact:   fasionchan@gmail.com
     @version:   $Id$
 
@@ -9,15 +9,14 @@
 
     Changelog:
 
-====
-监控
-====
+============
+操作系统监控
+============
 
 .. toctree::
     :titlesonly:
 
-    操作系统监控 <os/index>
-    监控工具 <tools/index>
+    CPU使用率 <cpu-usage>
 
 .. comments
     comment something out below
