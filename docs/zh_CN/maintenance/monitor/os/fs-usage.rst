@@ -10,8 +10,7 @@
     Changelog:
 
 .. meta::
-    :description lang=zh:
-    :keywords:
+    :keywords: 文件系统使用量, 磁盘使用量, 磁盘监控, fs usage, disk usage, disk monitor, linux
 
 ==============
 文件系统使用量
