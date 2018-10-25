@@ -1,7 +1,7 @@
-.. 监控
+.. 硬件监控
     FileName:   index.rst
     Author:     Fasion Chan
-    Created:    2018-07-25 20:38:11
+    Created:    2018-10-23 20:48:37
     @contact:   fasionchan@gmail.com
     @version:   $Id$
 
@@ -9,16 +9,9 @@
 
     Changelog:
 
-====
-监控
-====
-
-.. toctree::
-    :titlesonly:
-
-    操作系统监控 <os/index>
-    硬件监控 <hardware/index>
-    监控工具 <tools/index>
+========
+硬件监控
+========
 
 .. comments
     comment something out below
@@ -27,3 +20,5 @@
         :description lang=zh:
         :keywords:
 
+    .. toctree::
+        :titlesonly:

@@ -25,7 +25,7 @@ INTERVAL = 1
 # table header
 TABLE_HEADER = (
     'device',
-    'used',
+    'utilized',
     'user',
     'nice',
     'system',
@@ -83,9 +83,9 @@ def sample_forever():
                     lambda pair: 100. * (pair[0]-pair[1]) / delta,
                     zip(counters, last_counters),
                 ))
-                used_percent = sum(percents[:3] + percents[5:8])
+                utilized_percent = sum(percents[:3] + percents[5:8])
 
-                table_data.append([device, used_percent] + percents)
+                table_data.append([device, utilized_percent] + percents)
 
             # make table
             table_data = tabulate(

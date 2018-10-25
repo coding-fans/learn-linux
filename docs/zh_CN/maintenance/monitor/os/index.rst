@@ -17,6 +17,8 @@
     :titlesonly:
 
     CPU使用率 <cpu-usage>
+    内存使用量 <memory-usage>
+    文件系统使用量 <fs-usage>
 
 .. comments
     comment something out below

@@ -133,20 +133,20 @@ total
 
 注意到， `guest` 以及 `guest_nice` 不参与求和计算，因为这两种时间分别作为 `user` 以及 `nice` 的一部分统计在其中了。
 
-used
-----
+utilized
+--------
 
 `CPU` 用于执行任务的时间将是 `6` 种执行状态时间的总和：
 
 .. math::
 
-    used = user + nice + system + irq + softirq + steal
+    utilized = user + nice + system + irq + softirq + steal
 
 除此之外，还有另外一种计算方法，只包含 `5` 种执行状态：
 
 .. math::
 
-    used = user + nice + system + irq + softirq
+    utilized = user + nice + system + irq + softirq
 
 两种计算方式区别只在于： `steal` 状态占用的时间是否参与计算。
 前者反应了系统的 **实际负载** ， `steal` 虽不是本系统占用，但也制约了系统对 `CPU` 资源的进一步使用；
@@ -208,7 +208,7 @@ used
 接下，看看如何读取 `/proc/stat` 文件并计算 `CPU` 使用率。直接上代码：
 
 .. literalinclude:: /_src/maintenance/monitor/os/cpu_usage/cpu_usage.py
-    :caption: cpu_usage.c
+    :caption: cpu_usage.py
     :name: maintenance/monitor/os/cpu_usage/cpu_usage.py
     :language: py
     :lines: 16-
