@@ -41,6 +41,7 @@ release = u'1.0'
 # ones.
 extensions = [
     "sphinx.ext.mathjax",
+    "sphinx_sitemap",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -197,6 +198,8 @@ texinfo_documents = [
      author, 'Linux', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+site_url = 'https://learn-linux.readthedocs.io/zh_CN/latest/'
 
 def setup(app):
     app.add_stylesheet('css/hide-ad.css')
