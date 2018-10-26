@@ -13,7 +13,7 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import datetime
-# import os
+import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
@@ -23,6 +23,7 @@ import datetime
 project = u'学习Linux'
 copyright = u'2018, <a href="https://fasionchan.com">fasionchan</a>'
 author = u'fasionchan'
+site_domain = os.environ.get('SITE_DOMAIN', 'learn-linux.readthedocs.io')
 
 # The short X.Y version
 version = u'1.0'
@@ -199,7 +200,7 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
-site_url = 'https://learn-linux.readthedocs.io/zh_CN/latest/'
+site_url = 'https://%s/zh_CN/latest/' % (site_domain,)
 
 def setup(app):
     app.add_stylesheet('css/hide-ad.css')
