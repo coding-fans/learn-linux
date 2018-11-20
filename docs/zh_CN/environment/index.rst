@@ -38,3 +38,4 @@
 
     VirtualBox <virtualbox/index>
     安装系统 <install>
+    旧版系统 <old-releases>
