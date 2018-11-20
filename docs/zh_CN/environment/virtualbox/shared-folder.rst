@@ -71,7 +71,7 @@
 
 .. code-block:: shell-session
 
-    $ $ lsmod | grep vbox
+    $ lsmod | grep vbox
     vboxsf                 45056  1
     vboxvideo              36864  1
     ttm                   106496  1 vboxvideo
@@ -80,6 +80,11 @@
     vboxguest             303104  2 vboxsf
 
 在输出中可以找到名为 ``vboxsf`` 的内核模块，则意味着扩展包安装成功。
+
+.. note::
+
+    老 `Linux` 没有提供 `Virtualbox` 扩展包，需要自行编译安装，方法见 :ref:`shared-folder/appendix` 。
+
 
 手工挂载
 --------
@@ -140,14 +145,76 @@ fstab
 
 注意到，这里 `mount` 命令只需指定挂载点，其他信息系统均可从配置文件中获取。
 
+.. _shared-folder/appendix:
+
+附录
+====
+
+编译安装扩展包
+--------------
+
+老 `Linux` 系统软件源没有提供 `Virtualbox` 功能扩展包，需要自行编译安装。
+
+编译需要 `gcc` 命令安装就绪：
+
+.. code-block:: shell-session
+
+    $ sudo apt-get install gcc
+
+在虚拟机界面，点击菜单栏 `设备 > 安装增强功能` ，虚拟机便插入了增强功能光盘。
+接着，将光盘挂载到文件系统：
+
+.. code-block:: shell-session
+
+    $ sudo mount /dev/cdrom /mnt
+    [sudo] password for fasion:
+    mount: block device /dev/sr0 is write-protected, mounting read-only
+
+.. tip::
+
+    如果 `/mnt` 目录已经挂载其他文件系统，请换另一个挂载点。
+
+挂载完毕后，便可查看光盘内容了：
+
+.. code-block:: shell-session
+
+    $ cd /mnt
+    $ ls
+    32Bit  AUTORUN.INF  cert  runasroot.sh  VBoxLinuxAdditions.run    VBoxWindowsAdditions-amd64.exe  VBoxWindowsAdditions-x86.exe
+    64Bit  autorun.sh   OS2   TRANS.TBL     VBoxSolarisAdditions.pkg  VBoxWindowsAdditions.exe
+
+接着，以超级用户权限运行 `VBoxLinuxAdditions.run` 即可完成编译及安装：
+
+.. code-block:: shell-session
+
+    $ sudo ./VBoxLinuxAdditions.run
+    Verifying archive integrity... All good.
+    Uncompressing VirtualBox 5.2.22 Guest Additions for Linux.........
+    VirtualBox Guest Additions installer
+    Removing installed version 5.2.22 of VirtualBox Guest Additions...
+    You may need to restart your guest system to finish removing the guest drivers.
+    Copying additional installer modules ...
+    tar: Record size = 8 blocks
+    Installing additional modules ...
+    VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel modules.  This may take a while.
+    VirtualBox Guest Additions: Starting.
+
+不出意外，扩展包安装完毕，可以找到 `vboxsf` 内核模块：
+
+.. code-block:: shell-session
+
+    $ lsmod | grep vbox
+    vboxsf                 35260  1
+    vboxguest             279267  2 vboxsf
+
 下一步
 ======
 
 .. include:: /_fragments/next-step-to-wechat-mp.rst
 
-.. include:: /_fragments/wechat-reward.rst
-
 .. include:: /_fragments/disqus.rst
+
+.. include:: /_fragments/wechat-reward.rst
 
 .. comments
     comment something out below
