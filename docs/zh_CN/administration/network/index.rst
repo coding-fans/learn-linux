@@ -18,6 +18,7 @@
 
     机器名管理 <hostname>
     设备管理 <device>
+    Netplan <netplan>
 
 .. comments
     comment something out below

@@ -20,4 +20,7 @@ BIND_ADDR=linux.local
 sudo ifconfig lo0 alias $BIND_ADDR up
 
 rm -rf "$BUILD_PATH"
-PATH="$PYENV_PATH/bin:$PATH" "$PYENV_PATH/bin/sphinx-autobuild" -H $BIND_ADDR . "$BUILD_PATH/html"
+(
+    cd "$DOC_ROOT_PATH"
+    PATH="$PYENV_PATH/bin:$PATH" "$PYENV_PATH/bin/sphinx-autobuild" -H $BIND_ADDR . "$BUILD_PATH/html"
+)
