@@ -16,6 +16,7 @@
 .. toctree::
     :titlesonly:
 
+    文本处理 <text-processing/index>
     文件目录树 <file-tree>
     文件打包 <file-baling>
 
