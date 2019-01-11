@@ -28,6 +28,8 @@
     开发环境 <development-environment/index>
     系统编程 <system-programming/index>
     命令手册 <command-manual/index>
+    译文 <translations/index>
+    附录 <appendices/index>
     鸣谢 <acknowledgements/index>
 
 .. comments

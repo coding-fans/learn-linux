@@ -20,6 +20,7 @@
     系统与内核 <system-kernel/index>
     文件IO <file-io/index>
     高级文件IO <advanced-file-io/index>
+    守护进程 <daemon/index>
     内核编程 <kernel-programming/index>
 
 .. comments

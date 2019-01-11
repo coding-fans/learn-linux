@@ -164,6 +164,11 @@
 下一步
 ======
 
+.. toctree::
+    :titlesonly:
+
+    grep 文本搜索 <grep>
+
 .. include:: /_fragments/next-step-to-wechat-mp.rst
 
 参考文献

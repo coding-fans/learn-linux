@@ -1,7 +1,7 @@
-.. 命令手册
+.. 译文
     FileName:   index.rst
     Author:     Fasion Chan
-    Created:    2018-03-14 19:31:33
+    Created:    2019-01-07 19:08:05
     @contact:   fasionchan@gmail.com
     @version:   $Id$
 
@@ -9,14 +9,18 @@
 
     Changelog:
 
-========
-命令手册
-========
+.. meta::
+    :description lang=zh:
+    :keywords: 二进制程序移植, Linux
+
+====
+译文
+====
 
 .. toctree::
     :titlesonly:
 
-    tar <tar>
+    Linux二进制程序移植 <portable-linux-binaries>
 
 .. comments
     comment something out below

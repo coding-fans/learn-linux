@@ -1,7 +1,7 @@
-.. 命令手册
+.. 守护进程
     FileName:   index.rst
     Author:     Fasion Chan
-    Created:    2018-03-14 19:31:33
+    Created:    2018-12-10 18:54:34
     @contact:   fasionchan@gmail.com
     @version:   $Id$
 
@@ -10,14 +10,18 @@
     Changelog:
 
 ========
-命令手册
+守护进程
 ========
 
 .. toctree::
     :titlesonly:
 
-    tar <tar>
+    实现步骤 <daemonize>
 
 .. comments
     comment something out below
+
+    .. meta::
+        :description lang=zh:
+        :keywords:
 

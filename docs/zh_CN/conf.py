@@ -17,11 +17,12 @@ import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+now = datetime.datetime.now()
 
 # -- Project information -----------------------------------------------------
 
 project = u'学习Linux'
-copyright = u'2018, <a href="https://fasionchan.com">fasionchan</a>'
+copyright = u'%d, <a href="https://fasionchan.com">fasionchan</a>' % (now.year,)
 author = u'fasionchan'
 site_domain = os.environ.get('SITE_DOMAIN', 'learn-linux.readthedocs.io')
 
@@ -68,7 +69,7 @@ language = u'zh_CN'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
-exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store', '_fragments', 'opt']
+exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store', '_fragments', 'opt', 'appendices/_rst']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -141,6 +142,7 @@ html_sidebars = {
         #'reward.html',
 
         #'relations.html',  # needs 'show_related': True theme option to display
+        'last.html',
     ]
 }
 
@@ -204,5 +206,5 @@ texinfo_documents = [
 site_url = 'https://%s/zh_CN/latest/' % (site_domain,)
 
 def setup(app):
-    app.add_stylesheet('css/hide-ad.css')
+    app.add_stylesheet('css/qgg.css')
     app.add_stylesheet('css/search-box.css')
