@@ -45,6 +45,16 @@ reStructuredText
 .. literalinclude:: _rst/table.rst
     :language: ReST
 
+图片
+====
+
+.. include:: _rst/figure.rst
+
+我们的公众号二维码，由以下代码嵌入：
+
+.. literalinclude:: _rst/figure.rst
+    :language: ReST
+
 本页源码
 ========
 

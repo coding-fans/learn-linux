@@ -1,7 +1,7 @@
-.. 命令手册
+.. 内核管理
     FileName:   index.rst
     Author:     Fasion Chan
-    Created:    2018-03-14 19:31:33
+    Created:    2019-02-12 19:00:34
     @contact:   fasionchan@gmail.com
     @version:   $Id$
 
@@ -10,15 +10,18 @@
     Changelog:
 
 ========
-命令手册
+内核管理
 ========
 
 .. toctree::
     :titlesonly:
 
-    tar <tar>
-    xargs <xargs>
+    内核参数管理 <sysctl>
+    资源限制 <rlimit>
 
 .. comments
     comment something out below
 
+    .. meta::
+        :description lang=zh:
+        :keywords:
