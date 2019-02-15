@@ -17,6 +17,7 @@
     :titlesonly:
 
     内核参数管理 <sysctl>
+    内核参数调优 <kernel-parameters-tuning>
     资源限制 <rlimit>
 
 .. comments

@@ -42,6 +42,21 @@ Linux工具快速教程
 - 第三部分为 `工具参考篇 <https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/index.html>`_ ，
   更全面介绍实用命令工具的用法示例，可当手册查阅；
 
+Linux性能调优指南
+-----------------
+
+`Linux性能调优指南 <https://lihz1990.gitbooks.io/transoflptg/content/>`_
+
+- 第一章、 `理解Linux操作系统 <https://lihz1990.gitbooks.io/transoflptg/content/01.%E7%90%86%E8%A7%A3Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/>`_ ，
+  介绍了影响系统性能的问题，以及Linux如何管理系统资源。
+  你将学习到一些重要的系统性能指标！
+- 第二章、 `监控和测试工具 <https://lihz1990.gitbooks.io/transoflptg/content/02.%E7%9B%91%E6%8E%A7%E5%92%8C%E5%8E%8B%E6%B5%8B%E5%B7%A5%E5%85%B7/>`_ ，
+  介绍各类衡量和分析Linux性能的工具。
+- 第三章、 `分析性能瓶颈 <https://lihz1990.gitbooks.io/transoflptg/content/03.%E5%88%86%E6%9E%90%E6%80%A7%E8%83%BD%E7%93%B6%E9%A2%88/>`_ ，
+  介绍如何识别出系统中的瓶颈；
+- 第四章、 `优化操作系统 <https://lihz1990.gitbooks.io/transoflptg/content/04.%E7%B3%BB%E7%BB%9F%E8%B0%83%E4%BC%98/>`_ ，
+  基于前几章已经介绍的操作系统工作原理，和性能分析工具，你可以开始探索Linux上的各种性能优化办法！
+
 .. comments
     comment something out below
 
