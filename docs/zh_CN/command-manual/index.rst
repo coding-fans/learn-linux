@@ -16,6 +16,7 @@
 .. toctree::
     :titlesonly:
 
+    man <man>
     tar <tar>
     xargs <xargs>
 

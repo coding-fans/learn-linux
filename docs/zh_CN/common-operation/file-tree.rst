@@ -83,6 +83,54 @@ tree
 
 这样，整个项目的代码结构就清晰呈现在眼前了！
 
+`tree` 命令显示中文目录或文件名会有乱码：
+
+.. code-block:: shell-session
+
+    $ tree
+    .
+    ├── Blog
+    ├── Linux
+    │   ├── Linux�\200\232�\224�IO模�\236\213.md
+    │   └── Linux�\226\207�\234��\204�\220\206.md
+    ├── Network
+    │   ├── �\221�\234�\203�\202�\215\217议�\213�\211��\220\206�\202.md
+    │   └── �\232�\212��\205��\201\224�\205�系�\207\207�\233\206�\200�\217\221�\226\207档.md
+    ├── Python
+    │   ├── Python�\205饰�\231��\230级�\224��\225.md
+    │   └── 使�\224�gdb�\203�\225Python�\213�\217.md
+    └── 常�\224�.md
+
+    4 directories, 7 files
+
+这时只需加上 `-N` 选项即可：
+
+.. code-block:: shell-session
+
+    $ tree -N
+    .
+    ├── Blog
+    ├── Linux
+    │   ├── Linux通用IO模型.md
+    │   └── Linux文本处理.md
+    ├── Network
+    │   ├── 网络七层协议之物理层.md
+    │   └── 业务关联关系采集开发文档.md
+    ├── Python
+    │   ├── Python装饰器高级用法.md
+    │   └── 使用gdb调试Python程序.md
+    └── 常用.md
+
+    4 directories, 7 files
+
+.. note::
+
+    根据 :doc:`/command-manual/man` 手册， *-N* 选项作用为：
+
+    *Print non-printable characters as is instead of as escaped octal numbers.*
+
+    意思是不对不可打印的 `ASCII` 字符进行转义。
+
 下一步
 ======
 

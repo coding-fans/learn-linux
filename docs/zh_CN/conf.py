@@ -138,6 +138,7 @@ html_sidebars = {
         #'sf-namecard-fasionchan.html',
         'wechat-mp-qrcode.html',
         #'donate.html',
+        'course-ad2.html',
 
         #'reward.html',
 
