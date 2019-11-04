@@ -3,7 +3,7 @@
 # Author: fasion
 # Created time: 2019-11-04 08:38:35
 # Last Modified by: fasion
-# Last Modified time: 2019-11-04 08:41:37
+# Last Modified time: 2019-11-04 08:44:15
 
 SELF_PATH=`realpath "$0"`
 SCRIPT_DIR_PATH=`dirname "$SELF_PATH"`
@@ -17,5 +17,5 @@ PYENV_BIN_PATH="$PYENV_PATH/bin"
 
 (
     cd "$DOC_ROOT_PATH"
-    PATH="$PATH:$PYENV_BIN_PATH" make
+    PATH="$PATH:$PYENV_BIN_PATH" make html
 )
